@@ -11,7 +11,7 @@ import skills from "./assets/skills.js";
     <h1>About</h1>
     <div class="row gx-5">
       <figure class="col-md-6">
-        <img src="../../public/images/about-1.jpg" alt="profile" />
+        <img src="/images/about-1.jpg" alt="profile" />
         <figcaption></figcaption>
       </figure>
       <p class="col-md-6">안녕하세요, 백엔드 개발자 류찬혁입니다.</p>
