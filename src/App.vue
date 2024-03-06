@@ -1,30 +1,56 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import Navbar from "./components/Navbar.vue";
+import skills from "./assets/skills.js";
 </script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+  <!-- Navbar 영역 -->
+  <Navbar />
+
+  <section id="about" class="container">
+    <h1>About</h1>
+    <div class="row gx-5">
+      <figure class="col-md-6">
+        <img src="../../public/images/about-1.jpg" alt="profile" />
+        <figcaption></figcaption>
+      </figure>
+      <p class="col-md-6">안녕하세요, 백엔드 개발자 류찬혁입니다.</p>
+    </div>
+    <article class="row mt-5">
+      <h2>skills</h2>
+      <div >
+        <div class="row" v-for="skillgroup in skills">
+          <h4 class="col-md-12">{{skillgroup.name}}</h4>
+          <div class="col-md-6"
+               v-for="skill in skillgroup.items">
+            <dl>
+              <dt class="lead">{{ skill.name }}</dt>
+              <dd>
+                <div class="progress">
+                  <div
+                    :class="`progress-bar ${skill.color}`"
+                    role="progressbar"
+                    aria-valuenow="75"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    :style="{ width: skill.point }"
+                  ></div>
+                </div>
+              </dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+<style scoped lang="scss">
+#about {
+  div {
+    img {
+      width: 100%;
+    }
+  }
 }
 </style>
