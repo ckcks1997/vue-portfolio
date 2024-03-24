@@ -5,7 +5,7 @@ import skills from "../assets/skills.js";
 
 <template>
   <section id="about" class="container">
-    <h1>About</h1>
+    <h1 class="fw-bold mb-3">About</h1>
     <div class="row gx-5">
       <figure class="col-md-6">
         <img src="/images/about-1.jpg" alt="profile" />
@@ -14,11 +14,11 @@ import skills from "../assets/skills.js";
       <p class="col-md-6">안녕하세요, 백엔드 개발자 류찬혁입니다.</p>
     </div>
     <article class="row mt-5">
-      <h2>skills</h2>
-      <div >
-        <div class="row" v-for="skillgroup in skills">
+      <h2 class="fw-bold mb-3">Skills</h2>
+      <div>
+        <div class="row mb-3" v-for="skillgroup in skills">
           <h4 class="col-md-12">{{skillgroup.name}}</h4>
-          <div class="col-md-6"
+          <div class="col-md-3"
                v-for="skill in skillgroup.items">
             <dl>
               <dt class="lead">{{ skill.name }}</dt>
