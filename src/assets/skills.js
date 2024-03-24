@@ -15,12 +15,20 @@ const skills = [
       { info: 'item', name: 'Spring', point: '80%', color: 'bg-success' },
       {
         info: 'item',
-        name: 'Mybatis/SQL(Oracle, PostgresSQL)',
+        name: 'Oracle, PostgresSQL',
         point: '70%',
         color: 'bg-success',
       },
       { info: 'item', name: 'JPA/Hibernate', point: '30%', color: 'bg-success' },
- ]}
+ ]},
+  {
+    info: 'head',
+    name: 'OTHER',
+    items:[
+      { info: 'item', name: 'Python', point: '70%', color: 'bg-warning' },
+      { info: 'item', name: 'Web Crawling', point: '70%', color: 'bg-warning' },
+    ]
+  }
 ]
 
 export default skills
