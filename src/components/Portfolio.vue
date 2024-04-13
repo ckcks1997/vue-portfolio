@@ -1,5 +1,9 @@
 <script setup>
 import data from '../assets/portfolio.js'
+
+const gotoLink = (e) =>{
+  window.open(e.currentTarget.getAttribute('link_data'))
+}
 </script>
 
 <template>
@@ -11,7 +15,7 @@ import data from '../assets/portfolio.js'
         <h3>{{ portfolioData.title }}</h3>
         <p>{{ portfolioData.desc }}</p>
         <small class="mb-3 text-secondary">{{portfolioData.skills}}</small>
-        <a class="btn btn-primary" :href="portfolioData.link">상세보기</a>
+        <button @click="gotoLink" class="btn btn-primary" :link_data="portfolioData.link">상세보기</button>
       </li>
     </ul>
   </section>
