@@ -11,7 +11,7 @@ import data from '../assets/portfolio.js'
         <h3>{{ portfolioData.title }}</h3>
         <p>{{ portfolioData.desc }}</p>
         <small class="mb-3 text-secondary">{{portfolioData.skills}}</small>
-        <router-link class="btn btn-primary" :to='"/detail/"+portfolioData.id'>상세보기</router-link>
+        <a class="btn btn-primary" :href="portfolioData.link">상세보기</a>
       </li>
     </ul>
   </section>
