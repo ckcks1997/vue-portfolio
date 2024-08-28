@@ -2,10 +2,8 @@ const skills = [
   { info: 'head',
     name: 'FRONT',
     items:[
-      { info: 'item', name: 'HTML', point: '80%' },
-      { info: 'item', name: 'CSS', point: '70%' },
-      { info: 'item', name: 'Javascript', point: '70%' },
-      { info: 'item', name: 'Vue', point: '30%' },
+      { info: 'item', name: 'Vue', point: '70%' },
+      { info: 'item', name: 'React', point: '30%' },
     ]
 },
   { info: 'head',
@@ -15,11 +13,11 @@ const skills = [
       { info: 'item', name: 'Spring', point: '80%', color: 'bg-success' },
       {
         info: 'item',
-        name: 'Oracle, PostgresSQL',
+        name: 'Oracle, MySQL(MariaDB)',
         point: '70%',
         color: 'bg-success',
       },
-      { info: 'item', name: 'JPA/Hibernate', point: '30%', color: 'bg-success' },
+      { info: 'item', name: 'JPA/SQLAlchemy', point: '30%', color: 'bg-success' },
  ]},
   {
     info: 'head',
@@ -27,6 +25,7 @@ const skills = [
     items:[
       { info: 'item', name: 'Python', point: '70%', color: 'bg-warning' },
       { info: 'item', name: 'Web Crawling', point: '70%', color: 'bg-warning' },
+      { info: 'item', name: 'FastAPI', point: '20%', color: 'bg-warning' },
     ]
   }
 ]

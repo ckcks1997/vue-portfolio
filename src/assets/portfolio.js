@@ -15,6 +15,14 @@ const data = [
         skills: "Vue 3",
         imgUrl: "/images/weather.jpg",
         link: "https://ckcks1997-weather.vercel.app/",
+    },{
+        id: 2,
+        title: "COMPANY COLOR",
+        desc: "약 600만+기업 데이터로 인사 트렌드를 한눈에 확인 가능한 사이트",
+        category: "web",
+        skills: "React 18, FastAPI",
+        imgUrl: "/images/companycolor.jpg",
+        link: "https://github.com/ckcks1997/company-color",
     }
 
 ]

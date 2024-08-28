@@ -11,7 +11,7 @@ const gotoLink = (e) =>{
     <h1>Portfolio</h1>
     <ul class="list row">
       <li class="col-md-4" v-for="(portfolioData, i) in data" key="portfolioData.id">
-        <img :src="portfolioData.imgUrl" alt="">
+        <img :src="portfolioData.imgUrl" alt="" style="align-content: center; margin-bottom: 10px;">
         <h3>{{ portfolioData.title }}</h3>
         <p>{{ portfolioData.desc }}</p>
         <small class="mb-3 text-secondary">{{portfolioData.skills}}</small>
